@@ -1,0 +1,38 @@
+﻿Date;Transaction ID;Amount;Currency;Recipient;Purpose
+01.04.2026;123456789;650;EUR;Miete;April
+02.04.2026;987654321;50;EUR;Stromanbieter;Stromrechnung März
+03.04.2026;202604015;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+05.04.2026;456789123;39,99;EUR;Internetanbieter;Internetrechnung März
+10.04.2026;202604016;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+12.04.2026;202604028;14,99;EUR;H&M;Bekleidung
+15.04.2026;321654987;35;EUR;Versicherung;Versicherungsbeitrag April
+17.04.2026;202604017;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+20.04.2026;654987321;55;EUR;Fitnessstudio;Mitgliedsbeitrag April
+24.04.2026;202604018;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+30.04.2026;789123456;175;EUR;Lebensmittelgeschäft;Monatseinkauf April
+30.04.2026;852963741;67;EUR;ABO ÖVM Monatsticket;Mai
+01.05.2026;202604001;650;EUR;Miete; Mai
+01.05.2026;202604019;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+02.05.2026;202604002;50;EUR;Stromanbieter;Stromrechnung April
+05.05.2026;202604003;39,99;EUR;Internetanbieter;Internetrechnung April
+08.05.2026;202604020;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+13.05.2026;202604029;15,49;EUR;H&M;Bekleidung
+15.05.2026;202604004;35;EUR;Versicherung;Versicherungsbeitrag Mai
+15.05.2026;202604021;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+20.05.2026;202604005;55;EUR;Fitnessstudio;Mitgliedsbeitrag Mai
+22.05.2026;202604022;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+29.05.2026;202604023;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+31.05.2026;202604006;175;EUR;Lebensmittelgeschäft;Monatseinkauf Mai
+31.05.2026;202604007;67;EUR;ABO ÖVM Monatsticket;Juni
+01.06.2026;202604008;650;EUR;Miete;Juni
+02.06.2026;202604009;50;EUR;Stromanbieter;Stromrechnung Mai
+05.06.2026;202604010;39,99;EUR;Internetanbieter;Internetrechnung Mai
+05.06.2026;202604024;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+11.06.2026;202604030;14,95;EUR;H&M;Bekleidung
+12.06.2026;202604025;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+15.06.2026;202604011;35;EUR;Versicherung;Versicherungsbeitrag Juni
+19.06.2026;202604026;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+20.06.2026;202604012;55;EUR;Fitnessstudio;Mitgliedsbeitrag Juni
+26.06.2026;202604027;50;EUR;Geldautomat;Wöchentliche Bargeldabhebung
+30.06.2026;202604013;175;EUR;Lebensmittelgeschäft;Monatseinkauf Juni
+30.06.2026;202604014;67;EUR;ABO ÖVM Monatsticket;Juli

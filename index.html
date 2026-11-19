@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f2">
+  <title>Ausgaben im Überblick</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topline">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">↗</span> Ausgabenplaner</div>
+      <span class="period-label" id="period-label">Lade Zeitraum …</span>
+    </header>
+
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">Persönliche Finanzen</p>
+      <h1 id="page-title">Deine Ausgaben,<br>auf einen Blick.</h1>
+      <p class="subtitle" id="page-subtitle">Die Transaktionen werden aus der CSV-Datei geladen …</p>
+    </section>
+
+    <p class="data-status" id="data-status" role="alert" hidden></p>
+
+    <section class="summary-grid" aria-label="Zusammenfassung">
+      <article class="card summary-card">
+        <div class="card-label">Gesamtausgaben <span class="card-icon" aria-hidden="true">€</span></div>
+        <p class="card-value" id="total-spent">–</p>
+        <span class="card-detail" id="total-detail">für den ausgewählten Zeitraum</span>
+      </article>
+      <article class="card summary-card">
+        <div class="card-label">Transaktionen <span class="card-icon" aria-hidden="true">↗</span></div>
+        <p class="card-value" id="transaction-count">–</p>
+        <span class="card-detail" id="count-detail">erfasste Zahlungen</span>
+      </article>
+      <article class="card summary-card">
+        <div class="card-label">Durchschnitt pro Zahlung <span class="card-icon" aria-hidden="true">Ø</span></div>
+        <p class="card-value" id="average-spent">–</p>
+        <span class="card-detail">je Transaktion</span>
+      </article>
+    </section>
+
+    <section class="content-grid" aria-label="Ausgabenanalyse">
+      <article class="panel">
+        <div class="panel-heading">
+          <div>
+            <h2>Monatliche Ausgaben</h2>
+            <p class="panel-caption">Vergleich der erfassten Zahlungen</p>
+          </div>
+          <span class="chart-total" id="chart-total">–</span>
+        </div>
+        <div class="chart" id="monthly-chart" role="img" aria-label="Balkendiagramm der Ausgaben pro Monat"></div>
+        <p class="chart-note">Die Balken zeigen die Summe aller Transaktionen im jeweiligen Monat.</p>
+      </article>
+      <article class="card highlight">
+        <div>
+          <div class="card-label">Größte Einzelzahlung <span class="card-icon" aria-hidden="true">↗</span></div>
+          <p class="highlight-amount" id="largest-amount">–</p>
+        </div>
+        <div>
+          <div class="highlight-description" id="largest-recipient">–</div>
+          <div class="highlight-description" id="largest-date">–</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel category-summary" aria-labelledby="category-summary-title">
+      <div class="category-summary-header">
+        <h2 id="category-summary-title">Summen nach Ausgabenart</h2>
+        <p class="panel-caption" id="category-summary-caption">Die Monats- und Periodensummen werden geladen …</p>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead id="category-summary-head"></thead>
+          <tbody id="category-summary-rows"></tbody>
+          <tfoot id="category-summary-total"></tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel transactions" aria-labelledby="transactions-title">
+      <div class="transactions-header">
+        <div>
+          <h2 id="transactions-title">Alle Transaktionen</h2>
+          <p class="panel-caption">Durchsuche und filtere deine Ausgaben.</p>
+        </div>
+        <div class="transaction-controls">
+          <input class="control" id="search" type="search" placeholder="Suchen …" aria-label="Transaktionen suchen">
+          <select class="control" id="category-filter" aria-label="Nach Ausgabenart filtern">
+            <option value="all">Alle Ausgabenarten</option>
+          </select>
+          <select class="control" id="month-filter" aria-label="Nach Monat filtern">
+            <option value="all">Alle Monate</option>
+          </select>
+          <select class="control" id="sort-filter" aria-label="Transaktionen sortieren">
+            <option value="date-desc">Neueste zuerst</option>
+            <option value="category-asc">Nach Ausgabenart</option>
+            <option value="amount-desc">Betrag: hoch bis niedrig</option>
+            <option value="amount-asc">Betrag: niedrig bis hoch</option>
+          </select>
+        </div>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Datum</th>
+              <th scope="col">Art</th>
+              <th scope="col">Empfänger</th>
+              <th scope="col">Verwendungszweck</th>
+              <th scope="col" style="text-align:right">Betrag</th>
+            </tr>
+          </thead>
+          <tbody id="transaction-rows"></tbody>
+        </table>
+      </div>
+      <div class="table-footer">
+        <span id="visible-count">–</span>
+        <span>Beträge in EUR</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
